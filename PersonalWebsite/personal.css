@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Montserrat:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    position: relative
+}
+
+/* ---------------------- */
+
+.title_section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 220px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.title_name{
+    text-align: center;
+    color: white;
+    font-family: 'JetBrains Mono', monospace;
+    order: 1;
+}
+.title_name a{
+    font-family: 'JetBrains Mono', monospace;
+
+}
+
+.dynamic_txts{
+    color: #5AD86E;
+    height: 27px;
+    line-height: 27px;
+    overflow: hidden;
+    order: 2;
+}
+.dynamic_txts li{
+    list-style: none;
+    position: relative;
+    top: 0;
+    animation: slide 20s steps(5) infinite;
+    text-align: center;
+}
+
+@keyframes slide{
+    100%{
+        top: -135px;
+    }
+}
+    
+
+.dynamic_txts li span{
+    position: relative;
+}
+.dynamic_txts li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid #ffffff;
+    background: black;
+    animation: typing 4s steps(15) infinite;
+}
+
+@keyframes typing{
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+.title_description{
+    width: 250px;
+    height: 50;
+    order: 2;
+    font-family: 'JetBrains Mono', monospace;
+    color: #5AD86E;
+    text-align: center;
+
+}
+
+/* ---------------------- */
+
+.about_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+th, td{
+    padding: 15px;
+}
+.about_title{
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 28px;
+    color: white;
+    text-decoration: underline;
+}
+.about_description{
+    font-family: 'JetBrains Mono', monospace;
+    display: block;
+    width: 500px;
+    font-size: 30px;
+    color: white;
+}
+.about_img{
+    width: 350px;
+    height: 350px;
+    border-radius: 25px;
+    border: 1px solid #000;
+}
+
+/* ---------------------- */
+
+.internship_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 234px;
+    width: 100%;
+
+}
+
+.internship_message{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #262109;
+    border-radius: 25px;
+    height: 100px;
+    width: 1000px;
+    text-align: center;
+    color: #FBFF4D;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+/* ---------------------- */
+.body_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 90px;
+
+}
+.experience_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 100%;
+}
+
+.experience_container{
+    height: 500px;
+    width: 1000px;
+    background-color: #5AD86E;
+    border-style: solid;
+    border-color: white;
+    border-width: 8px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.experience_list_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 700px;
+    gap: 20px;
+}
+.experience_title{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: none;
+    font-family: 'JetBrains Mono', monospace;
+    color: white;
+    font-size: 30px;
+    width: 100%;
+}
+.experience_list_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+    font-family: 'Montserrat';
+    transition: background-color 0.25s ease-out;
+    cursor: pointer;
+}
+
+.experience_list_item:hover{
+    background-color: #5AD86E;
+    color: white;
+    border-style: solid;
+    border-color: white;
+}
+
+.experience_final_list_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat';
+    border-radius: 10px;
+    width: 70%;
+    height: 50px;
+    cursor: pointer;
+    transition: background-color 0.25s ease-out;
+}
+
+.experience_final_list_item:hover{
+    background-color: #5AD86E;
+    color: black;
+    border-style: solid;
+    border-color: black;
+}
+
+/* ---------------------- */
+
+.skills_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 100%;
+}
+
+.skills_container{
+    height: 500px;
+    width: 1000px;
+    background-color: white;
+    border-style: solid;
+    border-color: #5AD86E;
+    border-width: 8px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skills_list_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 700px;
+    gap: 20px;
+}
+.skills_title{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: none;
+    font-family: 'JetBrains Mono', monospace;
+    color: black;
+    font-size: 30px;
+    width: 100%;
+}
+.skills_list_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5AD86E;
+    color: white;
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+    font-family: 'Montserrat';
+    transition: background-color 0.25s ease-out;
+    cursor: pointer;
+}
+
+.skills_list_item:hover{
+    background-color: white;
+    color: black;
+    border-style: solid;
+    border-color: #5AD86E;
+}
+
+.skills_final_list_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    font-family: 'Montserrat';
+    border-radius: 10px;
+    width: 70%;
+    height: 50px;
+    border-style: solid;
+    border-color: black;
+    cursor: pointer;
+    transition: background-color 0.25s ease-out;
+}
+
+.skills_final_list_item:hover{
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+/* ---------------------- */
+
+
+.life_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 100%;
+}
+
+.life_container{
+    height: 500px;
+    width: 1000px;
+    background-color: black;
+    border-style: solid;
+    border-color: white;
+    border-width: 8px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.life_list_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 700px;
+    gap: 20px;
+}
+.life_title{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: none;
+    font-family: 'JetBrains Mono', monospace;
+    color: #5AD86E;
+    font-size: 30px;
+    width: 100%;
+}
+.life_list_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: white;
+    width: 100%;
+    height: 50px;
+    font-family: 'Montserrat';
+    transition: background-color 0.25s ease-out;
+    cursor: pointer;
+}
+
+.life_list_item:hover{
+    background-color: white;
+    color: black;
+    border-style: solid;
+}
+
+.life_final_list_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5AD86E;
+    color: white;
+    font-family: 'Montserrat';
+    border-radius: 10px;
+    width: 70%;
+    height: 50px;
+    border-style: solid;
+    border-color: black;
+    cursor: pointer;
+    transition: background-color 0.25s ease-out;
+}
+
+.life_final_list_item:hover{
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+/* ---------------------- */
+
+.final_message{
+    color: white;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+.fab{
+    padding-left: 10px;
+}
+
+.github-mark{
+    width: 10%;
+    padding-left: 10px;
+}
+
+.footer{
+    position: relative;
+    bottom: 0;
+    border-style: solid;
+    border-top: #5AD86E;
+    text-align: center;
+}
+
+.footer p{
+    color: white;
+    font-family: 'JetBrains Mono', monospace;
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
