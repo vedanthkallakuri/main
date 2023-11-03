@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.patasala{
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.patasala .blue{
+    color: #0abde3;
+    display: inline;
+}
+
+header{
+    height: 50px;
+}
+
+header h1{
+    float:left;
+    padding-left: 50px;
+    font-size: 25px;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+nav{
+    list-style: none;
+    margin-right: 50px;
+}
+
+nav li{
+    display: inline;
+    float: right;
+    padding: 8px 0px;
+    margin: 5px;
+}
+
+nav li .a-button{
+    text-decoration: none;
+    font-family: "poppins";
+    font-weight: 600;
+    padding: 9px 17px;
+    background-color: #0abde3;
+    border-radius: 5px;
+    color: white;
+    transition: background-color 500ms linear;
+}
+
+nav li .a-button:hover{
+    background-color: black;
+}
+
+
+nav li .a-link{
+    text-decoration: none;
+    padding: 9px 17px;
+    color: black;
+    font-family: "poppins";
+    font-weight: 600;
+}
+
+
+.page-wrapper{
+    width: 100%;
+    padding: 50px 400px 150px 400px;
+}
+
+
+.page-wrapper h2{
+    display: block;
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 36px;
+    
+}
+.page-wrapper h3{
+    display: block;
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 20px;
+    
+}
+.page-wrapper input{
+    display: block;
+    width: 100%;
+    outline: none;
+    border: 0;
+}
+
+.page-wrapper input:focus{
+    display: block;
+    width: 100%;
+    outline: none;
+    background-color: rgb(223, 238, 243);
+}
+
+.page-wrapper input[type="submit"]{
+    display: block;
+    width: 100%;
+    padding: 20px;
+    background-color: #0abde3;
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    transition: background-color 500ms linear;
+}
+
+.page-wrapper input[type="submit"]:hover{
+    background-color: black;
+}
+
+.page-wrapper .p-login-redirect{
+    font-family: "poppins";
+    text-align: center;
+    margin-top: 30px;
+}
+.page-wrapper .p-login-redirect a{
+    text-decoration: none;
+    color: #0abde3;
+}
+
+.field{
+    border: 1px solid rgb(236, 232, 232);
+    padding: 3px 15px 10px 15px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+.field label{
+    font-size: 13px;
+}
+
+p{
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .page-wrapper{
+        width: 100%;
+        padding: 50px 20px 20px 20px;
+    }
+
+    nav{
+        list-style: none;
+        margin-right: 0px;
+    }
+
+    header h1{
+        padding: 20px;
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Karma&display=swap');
+
+html{
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Karma';
+    background-image: linear-gradient(to bottom right, #B33771 , #182C61);
+    min-height: 100%;
+
+}
+
+
+h1{
+    font-size: 30px;
+    color: #ffffff;
+}
+
+p{
+    color: #ffffff;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #58B19F;
+    transition: color 200ms linear;
+}
+
+a:hover{
+    color: #9fdace;
+}
+
+img{
+    cursor: pointer;
+}
+.container {
+    width: 300px;
+    padding: 40px;
+    
+    padding-bottom: 50px;
+    background-color: #000000;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    text-align: center;
+ 
+    transition: box-shadow 600ms linear;
+}
+
+.container:hover{
+    box-shadow: 10px 10px #2C3A47;
+}
+
+.container input[type="text"], .container input[type="password"]{
+    display: block;
+    background: #000000;
+
+    border: 0;
+    border-radius: 30px;
+    border: 2px solid #25CCF7;
+    outline: none;
+    
+
+    margin: 20px auto;
+    padding: 15px 10px;
+
+    text-align: center;
+    color: #ffffff;
+
+    transition: border 200ms linear;
+}
+
+.container input[type="text"]:hover, .container input[type="password"]:hover{
+    border: 3px solid #ce9b9b; 
+
+}
+
+.container input[type="submit"]{
+    width: 100%;
+    border-radius: 5px;
+    background-color: #25CCF7;
+    border: 0;
+    outline: none;
+    color: white;
+    padding: 10px 10px 8px 12px;
+    margin-bottom: 20px;
+
+    transition: background-color 200ms linear, border-radius 1000ms linear;
+}
+
+.container input[type="submit"]:hover{
+    background-color: #ce9b9b;
+    border-radius: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header {
+    background-color:lightseagreen;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+}
+.nav_links{
+	list-style: none;
+}
+
+.nav_links li{
+	display: inline;
+    float: right;
+    padding: 9px 17px;
+    text-decoration: none;
+
+}
+
+.nav_links li a {
+    width: 50px;
+    padding: 10px;
+    color: rgb(243, 236, 243);
+    text-decoration: none;
+}
+
+.nav_links li a:hover{
+    background-color:rgb(123, 141, 156);
+    border-radius: 10px;
+    transition: all 0.3s ease 0s;
+}

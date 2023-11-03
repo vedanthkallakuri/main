@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Karma&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Karma';
+    background-color: #CAD3C8;
+}
+
+h1{
+    font-size: 30px;
+}
+
+.container{
+    width: 300px;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: none;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    text-align: center;
+}
+
+.container input[type="button"]{
+    width: 100%;
+    background-color: #FD7272;
+    border-color:black;
+    outline: none;
+    color: white;
+    padding: 10px 10px 8px 12px;
+
+    transition: background-color 200ms linear;
+}
+
+.container input[type="button"]:hover{
+    background-color: #ce9b9b;
+    
+}
+
+header{
+    background-color:#FD7272;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+nav{
+    list-style: none;
+}
+
+nav  li{
+    display: inline;
+    float: right;
+    padding: 9px 17px;
+    text-decoration: none;
+}
+
+nav li a{
+    width: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
