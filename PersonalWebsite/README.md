@@ -12,3 +12,6 @@ This website displays a quick summary of myself and what I do. I hope it can be 
 ### Javascript
 - Accessing and editing HTML elements
 - Animations and styling through logic
+
+## Things to Improve
+- Responsiveness to different devices
