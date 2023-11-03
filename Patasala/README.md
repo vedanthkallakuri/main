@@ -1,4 +1,4 @@
-# [See Patasala Here](http://67.205.188.205/) (IN DEVELOPMENT)
+# [SEE Patasala Here](http://67.205.188.205/patasala/register-login/login_home.php) (IN DEVELOPMENT)
 
 ## About
 Patasala is a project I am working on that aims to organize music students' music practice and learning. It aims to be a tool for any music student to connect with teachers, classmates, 
@@ -17,6 +17,7 @@ and their own progress better.
 ## Skills
 - PHP and MYSQL Databases
 - Use of Digital ocean droplet
+- HTML/CSS
 
 ## To Improve
 - Database connection errors that arise
