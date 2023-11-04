@@ -40,6 +40,7 @@ body{
 
 .dynamic_txts{
     color: #5AD86E;
+    font-family: 'JetBrains Mono', monospace;
     height: 27px;
     line-height: 27px;
     overflow: hidden;
