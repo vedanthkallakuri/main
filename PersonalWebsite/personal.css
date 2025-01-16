@@ -11,7 +11,7 @@
 }
 body{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: black;
     display: flex;
     align-items: center;
@@ -26,6 +26,7 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+
 }
 
 .header{
@@ -56,10 +57,11 @@ header a{
 }
 
 .header h1{
-  text-align: center;
-  font-size: 50px;
+  align-items: start;
+  font-size: 40px;
   font-family: "Quattrocento Sans", serif;
   font-weight: 600;
+  color: white;
 }
 
 /* .left .emojis{
@@ -78,25 +80,37 @@ header a{
   align-items: flex-start;
   box-sizing: border-box;
   margin: 50px;
+  margin-bottom: 0px;
   gap: 100px;
   justify-content: center;
+  color: white;
+  letter-spacing: 1px;
+ font-weight: 100;
+ line-height: 1.6;
 }
 
 .left{
   width: 50%;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
 }
 
 .left h2{
+    width: 400px;
+    display: flex;
+    align-items: start;
   text-align: left;
   font-size: 50px;
 }
 
 .left p{
-  font-size: 20px;
+  font-size: 18px;
   text-align: justify;
   width: 400px;
   text-transform: lowercase;
+  font-weight: 50;
 }
 
 .left .text{
@@ -112,4 +126,9 @@ header a{
   width: 400px;
 }
 
+footer{
+    color: white;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
 
